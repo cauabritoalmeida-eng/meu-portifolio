@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - Cauã Brito de Almeida</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rozha+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+    <header class="cabecalho">
+        <h1>Cauã Brito de Almeida</h1>
+        <p>Estudante de Engenharia de Software em formação na área de Front-End</p>
+        <nav class="menu" aria-label="Principal">
+            <a href="#sobre">Sobre mim</a>
+            <a href="#conhecimentos">Conhecimentos</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <main class="conteudo" id="conteudo">
+        <section id="sobre" class="secao" aria-labelledby="t-sobre">
+            <h2 id="t-sobre">Sobre mim</h2>
+            <p>Meu nome é Cauã Brito de Almeida, sou estudante de Engenharia de Software na Universidade Católica de Salvador e estou aprendendo HTML, CSS e JavaScript na matéria de Desenvolvimento Front-End.</p>
+            <p><strong>Objetivo:</strong> conseguir um estágio em desenvolvimento Front-End e evoluir construindo interfaces acessíveis e responsivas.</p>
+            <p><strong>Trajetória:</strong> iniciei na graduação, onde já pratiquei Java, banco de dados e a base da web (HTML, CSS e JavaScript).</p>
+        </section>
+
+        <section id="conhecimentos" class="secao" aria-labelledby="t-conh">
+            <h2 id="t-conh">Conhecimentos</h2>
+            <div class="table-wrapper">
+                <table class="table">
+                    <caption class="sr-only">Tecnologias, nível e onde são aplicadas</caption>
+                    <thead><tr><th scope="col">Tecnologia</th><th scope="col">Nível</th><th scope="col">Onde aplico</th></tr></thead>
+                    <tbody>
+                        <tr><td>HTML</td><td>Intermediário</td><td>Estrutura de páginas</td></tr>
+                        <tr><td>CSS</td><td>Iniciante</td><td>Estilização visual</td></tr>
+                        <tr><td>JavaScript</td><td>Iniciante</td><td>Interatividade</td></tr>
+                        <tr><td>Banco de Dados</td><td>Iniciante</td><td>Dados do sistema</td></tr>
+                        <tr><td>Java</td><td>Iniciante</td><td>Back-end</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="projetos" class="secao" aria-labelledby="t-proj">
+            <h2 id="t-proj">Projetos</h2>
+            <fieldset class="filtros">
+                <legend>Filtrar por tecnologia</legend>
+                <label><input type="radio" name="filtro" id="f-todos" checked> Todos</label>
+                <label><input type="radio" name="filtro" id="f-html"> HTML</label>
+                <label><input type="radio" name="filtro" id="f-css"> CSS</label>
+                <label><input type="radio" name="filtro" id="f-js"> JavaScript</label>
+            </fieldset>
+            <div class="cards">
+                <article class="card" data-t="html">
+                    <svg class="capa" viewBox="0 0 400 180" role="img" aria-label="Imagem ilustrativa do projeto Meu primeiro site"><rect width="400" height="180" fill="#006CB7"/><text x="200" y="98" fill="#fff" font-size="26" font-family="Arial" text-anchor="middle">Meu primeiro site</text></svg>
+                    <h3>Meu primeiro site</h3>
+                    <p><strong>Problema:</strong> praticar estrutura HTML e organização de conteúdo.</p>
+                    <p><strong>Público:</strong> colegas e professora da disciplina.</p>
+                    <p><strong>Minha contribuição:</strong> escrevi toda a estrutura e o conteúdo (projeto de aula).</p>
+                    <p><span class="tag">HTML</span></p>
+                    <a class="botao" href="https://github.com/cauabritoalmeida-eng" target="_blank" rel="noopener" aria-label="Ver no GitHub: Meu primeiro site">Ver no GitHub</a>
+                </article>
+                <article class="card" data-t="html css js">
+                    <svg class="capa" viewBox="0 0 400 180" role="img" aria-label="Imagem ilustrativa do projeto Portfólio pessoal"><rect width="400" height="180" fill="#E3000B"/><text x="200" y="98" fill="#fff" font-size="26" font-family="Arial" text-anchor="middle">Portfólio pessoal</text></svg>
+                    <h3>Portfólio pessoal</h3>
+                    <p><strong>Problema:</strong> apresentar meus conhecimentos a recrutadores.</p>
+                    <p><strong>Público:</strong> recrutadores e empresas de tecnologia.</p>
+                    <p><strong>Minha contribuição:</strong> desenvolvi o HTML e o CSS do site (projeto de aula).</p>
+                    <p><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></p>
+                    <a class="botao" href="https://github.com/cauabritoalmeida-eng" target="_blank" rel="noopener" aria-label="Ver repositório: Portfólio pessoal">Ver repositório</a>
+                </article>
+            </div>
+        </section>
+
+        <aside class="extra" aria-labelledby="t-extra">
+            <h2 id="t-extra">Informações extras</h2>
+            <p>Objetivo atual: desenvolver meus primeiros projetos Front-End.</p>
+            <ul>
+                <li>GitHub: <a href="https://github.com/cauabritoalmeida-eng" target="_blank" rel="noopener">github.com/cauabritoalmeida-eng</a></li>
+                <li>LinkedIn: <a href="https://linkedin.com/in/cauabrito" target="_blank" rel="noopener">linkedin.com/in/cauabrito</a></li>
+                <li>Interesse: desenvolvimento web</li>
+            </ul>
+        </aside>
+
+        <section id="contato" class="secao" aria-labelledby="t-contato">
+            <h2 id="t-contato">Contato</h2>
+            <p>Canais reais: <a href="https://linkedin.com/in/cauabrito" target="_blank" rel="noopener">LinkedIn</a> e <a href="https://github.com/cauabritoalmeida-eng" target="_blank" rel="noopener">GitHub</a>.</p>
+            <p class="aviso"><strong>Demonstração:</strong> este formulário não tem servidor. Ele valida os campos, mas nenhuma mensagem é enviada.</p>
+            <form class="form" action="#contato" method="get">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" required minlength="3" maxlength="80" pattern=".*\S.*" title="Digite um nome com 3 a 80 caracteres, não apenas espaços." autocomplete="name">
+                <small>Obrigatório, de 3 a 80 caracteres.</small>
+
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" required autocomplete="email">
+                <small>Obrigatório. Use um formato como nome@exemplo.com.</small>
+
+                <label for="motivo">Motivo do contato</label>
+                <select id="motivo" name="motivo" required>
+                    <option value="">Selecione...</option>
+                    <option>Oportunidade profissional</option>
+                    <option>Projeto freelance</option>
+                    <option>Outro</option>
+                </select>
+
+                <label for="assunto">Assunto adicional (opcional)</label>
+                <input type="text" id="assunto" name="assunto" maxlength="100">
+
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" name="mensagem" required minlength="30" maxlength="1000"></textarea>
+                <small>Obrigatória, de 30 a 1000 caracteres.</small>
+
+                <button class="botao" type="submit">Enviar mensagem</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Portfólio de Cauã Brito de Almeida - 2026</p>
+        <p>Desenvolvido como atividade da disciplina de Programação Front-End.</p>
+    </footer>
+</body>
+</html>
